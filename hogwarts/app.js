@@ -57,4 +57,10 @@ $(() => {
     $('.secret').delay(2000).show('slow');
     $('.seaUnicorn').addClass('cabbage');
     $('.seaUnicorn').removeClass('cabbage');
+
+    //======================== Year 7
+
+    $('h5').replaceWith('<h5>Fall 2021</h5>');
+    $('ul').prepend('<li>Butter beer (again?)</li>');
+    $('ul').attr('storage', 'chest');
 })
