@@ -11,6 +11,7 @@ body {
 }
 
 ul {
+    margin: 0 auto;
     list-style: none;
 }
 
@@ -30,3 +31,7 @@ table {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* #newand {
+    color:indigo;
+  } just realized it's with jquery*/

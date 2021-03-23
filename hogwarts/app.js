@@ -14,8 +14,8 @@ $(() => {
 
     $('#container').append($h3);
 
-    let $h4 = $('<h4 class="seaUnicorn"> cheese </h4>');
-    $('#container').append('<h4> Just a stick, I mean "Wand" </h4>');
+    let $h4 = $('<h4 class="seaUnicorn" id="cheese"> cheese (yes, my sea unicorn\'s name is "cheese") </h4>');
+    $('#container').append('<h4 id="wand"> Just a stick, I mean "Wand" </h4>');
     $('#container').append($h4); // not exactly in the order that it shows 
     //in the hw, like seaUnicorn appears beneath, but couldn't think 
     //of a better way!
@@ -34,4 +34,14 @@ $(() => {
     // in all seriousness, im sorry I am aware that this is prob not good practice, I'm sorry!
 
     //======================== Year 5
+    $('#wand').remove(); // had to give an id to wand, I guess?
+    $('li:first-child').remove();
+    $('li:first-child').remove(); //tried something like li:child[0], or something but never worked
+    $('h4').after('<h4 id="newand">Infinity Guantlet</h4>');
+    $('#newand').css("color", "indigo");
+    $('#cheese').detach().appendTo('h5'); // send cheese into a secret mission w detach/appendTo
+    $('#cheese').detach().appendTo('h4'); // send him back to h4
+    $('#cheese').css('color', 'black'); // h4 now is purple... so made him black again
+
+
 })
