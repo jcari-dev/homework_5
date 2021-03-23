@@ -13,3 +13,20 @@ body {
 ul {
     list-style: none;
 }
+
+table {
+    border: solid gray 1px;
+}
+
+th {
+    border: solid gray 1px;
+}
+
+td {
+    border: solid gray 1px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
